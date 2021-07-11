@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    display: grid;
+    padding: 1rem;
+    background-color: darksalmon;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#navbar a{
+    text-align: center;
+    text-decoration: none;
+    color: darkred;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 2rem;
+}
+#navbar a:hover{
+    color: bisque;
+}
