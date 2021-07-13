@@ -1,0 +1,95 @@
+/* ========================================= CREDITS ============================================== 
+    figure 1: 
+        Photo by <a href="https://unsplash.com/@v2osk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">v2osk</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    
+    figure 2: 
+        Photo by <a href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz shamoon</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 3:
+        Photo by <a href="https://unsplash.com/@jaymantri?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Mantri</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 4:
+        Photo by <a href="https://unsplash.com/@davidmarcu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Marcu</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 5:
+        Photo by <a href="https://unsplash.com/@danielroe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Roe</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 6:
+        Photo by <a href="https://unsplash.com/@wilstewart3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wil Stewart</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 7:
+        Photo by <a href="https://unsplash.com/@robertlukeman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Lukeman</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 8:
+        Photo by <a href="https://unsplash.com/@onefabian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Fabian Quintero</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+    figure 9:
+        Photo by <a href="https://unsplash.com/@montylov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">MontyLov</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+body{
+    margin: 1.5rem;
+}
+img{
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 750px ){
+    #tilesLayout{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px ){
+    #tilesLayout{
+        grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    }
+}
+
+@media screen and ( min-width: 1170px ){
+    #tilesLayout{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 200px);
+        grid-template-areas: 
+        "a a a b"
+        "a a a c"
+        "d d d d"
+        "e f f f"
+        "e g h i";
+        gap: 1rem;
+        max-width: 1100px;
+        margin: 1rem auto;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #img1{
+        grid-area: a;
+    }
+    #img2{
+        grid-area: b;
+    }
+    #img3{
+        grid-area: c;
+    }
+    #img4{
+        grid-area: d;
+    }
+    #img5{
+        grid-area: e;
+    }
+    #img6{
+        grid-area: f
+    }
+    #img7{
+        grid-area: g;
+    }
+    #img8{
+        grid-area: h;
+    }
+    #img9{
+        grid-area: i;
+    }
+}
