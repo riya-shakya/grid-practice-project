@@ -1,0 +1,18 @@
+.buttons{
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    background: bisque;
+    outline: 5px solid darkred;
+    outline-offset: 5px;
+    display: inline-block;
+    transition: all 0.25s linear;
+}
+.buttons a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: darkred;
+}
+.buttons:hover{
+    background: lightsalmon;
+    outline-offset: 1px;
+}
