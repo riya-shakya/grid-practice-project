@@ -11,26 +11,6 @@ figure 3:
 figure 4:
     Photo by <a href="https://unsplash.com/@editholic7?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kunal Shinde</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#cards h1{
-    font-size: 4rem;
-    text-transform: capitalize;
-    text-align: center;
-    color: coral;
-}
-#cards h2,
-#cards p{
-    text-align: center;
-    padding: 0.5rem;
-}
-#cards p{
-    min-height: 80px;
-}
 figcaption div{
     padding: 1rem;
     display: grid;
@@ -44,20 +24,7 @@ figcaption div{
     grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
     justify-content: center;
 }
-figure{
-    margin: 1rem;
-    background:lightsalmon;
-    border-radius: 10px;
-    border: 3px solid grey;
-    box-shadow: 3px 3px 10px black;
-    overflow: hidden;
-}
 figure .imgContainer{
     width: 100%;
     box-sizing: border-box;
-}
-figure .imgContainer img{
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
 }
