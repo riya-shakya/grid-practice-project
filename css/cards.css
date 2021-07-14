@@ -11,14 +11,7 @@ figure 3:
 figure 4:
     Photo by <a href="https://unsplash.com/@editholic7?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kunal Shinde</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 */
-figcaption div{
-    padding: 1rem;
-    display: grid;
-    background: silver;
-    grid-template-columns: repeat(4, 50px);
-    justify-content: space-evenly;
-    color: darkred;
-}
+
 #displayOfCards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));

@@ -1,0 +1,63 @@
+.navbar a{
+    margin: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+header{
+    height: 90px;
+    background:darkred;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    text-align: center;
+    color: bisque;
+}
+p{
+    font-size: 1.3rem;
+    word-spacing: 7px;
+    text-align: justify;
+    line-height: 40px;
+}
+.socialIconsDiv{
+    font-size: 1.5rem;
+}
+#copyInfo{
+    height: 90px;
+    padding: 1rem;
+    background: darkred;
+    color: bisque;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 750px){
+    .navbar{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #mainContent{
+        height: calc( 100vh - 180px);
+        display: grid;
+        grid-template-columns: 2fr 10fr 1fr;
+    }
+    .navbar{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        background-color: silver;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    p{
+        max-width: 100%;
+    }
+    .socialIconsDiv{
+        min-width: 100px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 20%;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
